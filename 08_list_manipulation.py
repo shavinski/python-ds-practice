@@ -40,3 +40,7 @@ def list_manipulation(lst, command, location, value=None):
         >>> list_manipulation(lst, 'add', 'dunno') is None
         True
     """
+
+
+print("should be ", )
+print("should be ", )

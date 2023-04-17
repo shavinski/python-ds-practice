@@ -14,3 +14,6 @@ def extract_full_names(people):
         >>> extract_full_names(names)
         ['Ada Lovelace', 'Grace Hopper']
     """
+
+print("should be ", )
+print("should be ", )

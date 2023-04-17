@@ -11,3 +11,7 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+
+
+print("should be ", )
+print("should be ", )
