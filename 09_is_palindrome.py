@@ -21,7 +21,17 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+    phrase_no_caps_no_space = phrase.lower().replace(" ", "", -1)[::-1]
 
+    # print("palindrome==>", phrase_no_caps_no_space, "phrase==>", phrase)
 
-print("should be ", )
-print("should be ", )
+    return phrase_no_caps_no_space == phrase.lower().replace(" ", "", -1)
+
+    # return phrase.reverse() == phrase
+
+print("should be True", is_palindrome('tacocat'))
+print("should be True", is_palindrome('noon'))
+print("should be False", is_palindrome('robert'))
+
+print("should be True", is_palindrome('taco cat'))
+print("should be True", is_palindrome('Noon'))

@@ -8,5 +8,8 @@ def frequency(lst, search_term):
         0
     """
 
-print("should be ", )
-print("should be ", )
+    return lst.count(search_term)
+
+
+print("should be 3", frequency([1, 4, 3, 4, 4], 4))
+print("should be 0", frequency([1, 4, 3], 7))

@@ -10,6 +10,11 @@ def single_letter_count(word, letter):
         >>> single_letter_count("Hello World", 'l')
         3
     """
+    lower_case = word.lower()
+    return lower_case.count(letter)
 
-print("should be ", )
-print("should be ", )
+
+
+print("should be 1", single_letter_count('Hello World', 'h'))
+print("should be 0", single_letter_count('Hello World', 'z'))
+print("should be 3", single_letter_count("Hello World", 'l'))
