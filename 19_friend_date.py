@@ -17,5 +17,15 @@ def friend_date(a, b):
         True
     """
 
-print("should be ", )
-print("should be ", )
+    # need to compare a and b
+        # look at a[2] and iterate through it 
+            # if el in a[2] is in b[2]
+                # return true
+    
+    # return false
+
+    for el in a[2]:
+        if el in b[2]:
+            return True
+        
+    return False

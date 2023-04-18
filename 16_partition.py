@@ -20,5 +20,20 @@ def partition(lst, fn):
         [['hi', 'bye'], [None, 6]]
     """
 
-print("should be ", )
-print("should be ", )
+    # have list that stores true 
+    # have list that stores false 
+
+    # loop through list and apply fn on each element 
+        # if true append into true list 
+        #else append into false list
+
+    true_list = []
+    false_list = []
+
+    for el in lst:
+        if fn(el):
+            true_list.append(el)
+        else: 
+            false_list.append(el)
+    
+    return [true_list, false_list]

@@ -29,6 +29,56 @@ def calculate(operation, a, b, make_int=False, message='The result is'):
         ValueError: Invalid Operation
     """
 
+    # if we dont have a valid opertaion of add', 'subtract', 'multiply', or 'divide'
+        # raise an error of valueError invalid operation 
+    operations = ['add', 'subtract', 'multiply', 'divide']
 
-print("should be ", )
-print("should be ", )
+    if operation not in operations:
+        raise ValueError("Invalid Operation")
+        
+    
+    # if we have add 
+        # if makeInt is true
+            # we return the msg int(a+b)
+        # else 
+            # we return the msg a+b
+    if operation == "add":
+        if make_int == True:
+            return f"{message} {int(a+b)}"
+        else:
+            return f"{message} {a+b}" 
+
+    # if we have subtract
+        # if makeInt is true
+            # we return the msg int(a-b)
+        # else 
+            # we return the msg a-b
+
+    if operation == "subtract":
+        if make_int == True:
+            return f"{message} {int(a-b)}"
+        else:
+            return f"{message} {a-b}" 
+
+    # if we have multiply
+        # if makeInt is true
+            # we return the msg int(a*b)
+        # else 
+            # we return the msg a*b
+    if operation == "multiply":
+        if make_int == True:
+            return f"{message} {int(a*b)}"
+        else:
+            return f"{message} {a*b}"
+
+    # if we have divide 
+        # if makeInt is true
+            # we return the msg int(a/b)
+        # else 
+            # we return the msg a/b
+    if operation == "divide":
+        if make_int == True:
+            return f"{message} {int(a/b)}"
+        else:
+            return f"{message} {a/b}"
+    

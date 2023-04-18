@@ -11,7 +11,16 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    # most variable set to 0
+    # loop through list
+        # use count method on each el of list 
+            # return value of count on cur num is greater than most 
+            # then reassign most to current num
+    # then return most 
 
-
-print("should be ", )
-print("should be ", )
+    most = 0
+    for num in nums:
+        if nums.count(num) > most: 
+            most = num
+    
+    return most 
