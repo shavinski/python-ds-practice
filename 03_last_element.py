@@ -12,6 +12,8 @@ def last_element(lst):
         >>> nums == [1, 2, 3]
         True
     """
+
+    # TODO: CHECK SOLUTION
     if len(lst) == 0:
         return None
     return lst[-1]

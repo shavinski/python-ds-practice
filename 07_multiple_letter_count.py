@@ -9,16 +9,15 @@ def multiple_letter_count(phrase):
     """
 
     # TODO: try .get()
+    # TODO: CHECK SOLUTION
     result = {}
     for ltr in phrase:
         if ltr not in result:
             result[ltr] = 1
-        else: 
+        else:
             result[ltr] += 1
-    
+
     return result
-
-
 
 
 print("should be {'y': 2, 'a': 1}:",  multiple_letter_count('yay'))

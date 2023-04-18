@@ -40,7 +40,7 @@ def list_manipulation(lst, command, location, value=None):
         >>> list_manipulation(lst, 'add', 'dunno') is None
         True
     """
-
+    # TODO: organize by remove and add
 
     if value == None and command == "add":
         return None
@@ -56,7 +56,7 @@ def list_manipulation(lst, command, location, value=None):
         return lst.pop(0)
     elif command == "remove" and location == "end":
         return lst.pop()
-    
+
 
 
 lst = [1,2,3]

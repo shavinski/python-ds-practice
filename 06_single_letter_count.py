@@ -11,7 +11,7 @@ def single_letter_count(word, letter):
         3
     """
     lower_case = word.lower()
-    return lower_case.count(letter)
+    return lower_case.count(letter.lower())
 
 
 

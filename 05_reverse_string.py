@@ -7,7 +7,7 @@ def reverse_string(phrase):
         >>> reverse_string('sauce')
         'ecuas'
     """
-    return phrase[::1]
+    return phrase[::-1]
 
 print("should be emosewa", reverse_string('awesome'))
 print("should be ecuas", reverse_string('sauce'))

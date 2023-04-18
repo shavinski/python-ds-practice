@@ -12,7 +12,7 @@ def weekday_name(day_of_week):
         >>> weekday_name(9)
         >>> weekday_name(0)
     """
-    weekday_names = {
+    WEEKDAY_NAMES = {
         1: 'Sunday',
         2: 'Monday',
         3: 'Tuesday',
@@ -22,7 +22,7 @@ def weekday_name(day_of_week):
         7: 'Saturday'
     }
 
-    return weekday_names.get(day_of_week, None)
+    return WEEKDAY_NAMES.get(day_of_week)
 
 print("should be Sunday", weekday_name(1))
 print("should be Saturday", weekday_name(7))
