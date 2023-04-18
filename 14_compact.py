@@ -5,5 +5,10 @@ def compact(lst):
         [1, 2, 'All done']
     """
 
-print("should be ", )
-print("should be ", )
+    copy = []
+
+    for ele in lst:
+        if ele:
+            copy.append(ele)
+
+    return copy

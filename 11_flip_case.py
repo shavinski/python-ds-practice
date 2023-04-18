@@ -11,6 +11,13 @@ def flip_case(phrase, to_swap):
         'AaaaHHH'
 
     """
+    result = ""
 
-print("should be ", )
-print("should be ", )
+    for letter in phrase:
+        if letter.casefold() != to_swap.casefold():
+            result += letter
+
+        elif letter.casefold() == to_swap.casefold():
+            result += letter.swapcase()
+
+    return result

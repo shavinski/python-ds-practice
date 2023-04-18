@@ -8,5 +8,4 @@ def capitalize(phrase):
         'Only first word'
     """
 
-print("should be ", )
-print("should be ", )
+    return phrase.capitalize()

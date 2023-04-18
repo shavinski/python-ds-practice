@@ -13,5 +13,10 @@ def multiply_even_numbers(nums):
         1
     """
 
-print("should be ", )
-print("should be ", )
+    result = 1
+
+    for num in nums:
+        if num % 2 == 0:
+            result *= num
+
+    return result
